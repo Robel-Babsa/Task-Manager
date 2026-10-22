@@ -32,12 +32,26 @@
          
         </header>
      
-     <section>
-        <div> <strong>1</strong> <span>Total Tasks</span></div>
-        <div> <strong>1</strong> <span>Active</span> </div>
-        <div> <strong>0</strong> <span>Completed</span> </div>
-        <div> <strong>0%</strong> <span>Progress</span> </div>    
-     </section>
+    <section class="stats">
+        <div class="stat">
+          <strong id="stat-total">1</strong><span>Total Tasks</span>
+        </div>
+        <div class="stat stat-blue">
+          <strong id="stat-active">1</strong><span>Active</span>
+        </div>
+        <div class="stat stat-green">
+          <strong id="stat-completed">0</strong><span>Completed</span>
+        </div>
+        <div class="stat stat-purple">
+          <strong id="stat-progress">0%</strong><span>Progress</span>
+        </div>
+      </section>
+
+      <div class="bar">
+         <div id="bar-fill" class="bar_fill">
+
+         </div>
+      </div>
 
             <button>+ Add New Task</button>
        <section>
