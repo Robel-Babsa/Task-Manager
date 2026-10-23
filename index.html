@@ -49,19 +49,54 @@
 
       <div class="bar">
          <div id="bar-fill" class="bar_fill">
-
          </div>
       </div>
 
-            <button>+ Add New Task</button>
-       <section>
-        <div><input type="text" placeholder="Search tasks"></div>
-         <div>
-                <button>All Tasks <span><strong>1</strong></span></button>
-                <button>Active <span><strong>1</strong></span></button>
-                <button>Completed</button>
+            <button class="add-btn"><svg
+          viewBox="0 0 24 24"
+          width="18"
+          height="18"
+          fill="none"
+          stroke="currentColor"
+          stroke-width="2"
+          stroke-linecap="round"
+        >
+          <path d="M12 5v14M5 12h14" />
+        </svg> Add New Task</button>
+    <section class="toolbar">
+        <div class="search">
+          <svg
+            viewBox="0 0 24 24"
+            width="20"
+            height="20"
+            fill="none"
+            stroke="currentColor"
+            stroke-width="2"
+            stroke-linecap="round"
+          >
+            <circle cx="11" cy="11" r="7" />
+            <path d="M21 21l-4.3-4.3" />
+          </svg>
+          <input
+            id="search-input"
+            type="text"
+            placeholder="Search tasks..."
+            autocomplete="off"
+          />
         </div>
-   </section>
+        <div class="filters">
+          <!-- LECTURE NOTE: data-filter is a custom attribute that JavaScript reads. -->
+          <button class="filter filter--active" data-filter="all">
+            All Tasks <span id="count-all" class="badge">0</span>
+          </button>
+          <button class="filter" data-filter="active">
+            Active <span id="count-active" class="badge">0</span>
+          </button>
+          <button class="filter" data-filter="completed">
+            Completed <span id="count-completed" class="badge">0</span>
+          </button>
+        </div>
+      </section>
 
    <section>
         <div>
